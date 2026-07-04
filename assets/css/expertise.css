@@ -1,0 +1,324 @@
+:root {
+  --ink: #0B1B2B;
+  --brass: #B7955C;
+  --brass-light: #D7C097;
+  --paper: #FAF8F4;
+  --paper-dim: #F2EEE5;
+  --charcoal: #1C2230;
+  --hairline: #DAD4C6;
+
+  --font-display: 'Fraunces', serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+/* ---------- HERO ---------- */
+.about-hero {
+  background: var(--ink);
+  color: var(--paper);
+  padding: 6rem 0 4rem;
+  text-align: center;
+}
+
+.about-hero .eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--brass-light);
+  margin-bottom: 1rem;
+}
+
+.about-hero h1 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 1rem;
+}
+
+.hero-lede {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  max-width: 520px;
+  margin: 0 auto;
+  color: rgba(250, 248, 244, 0.8);
+}
+
+/* ---------- INTRO / BANNER ---------- */
+.practice-intro {
+  padding: 4rem 0 0;
+  background: var(--paper);
+}
+
+.practice-subtitle {
+  font-family: var(--font-body);
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--charcoal);
+  max-width: 780px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.8;
+}
+
+.practice-banner {
+  display: flex;
+  justify-content: center;
+}
+
+.practice-banner img {
+  width: 100%;
+  max-width: 1100px;
+  height: auto;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 12px 30px rgba(11, 27, 43, 0.12);
+  display: block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.practice-banner img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 34px rgba(11, 27, 43, 0.16);
+}
+
+/* ---------- SECTION LABELS ---------- */
+.section-label {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--brass);
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+
+.section-label-light {
+  color: var(--brass-light);
+}
+
+/* ---------- PRACTICE AREAS ---------- */
+.practice {
+  padding: 5rem 0;
+  background: var(--paper);
+  text-align: center;
+}
+
+.practice h2,
+.approach h2 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 2rem;
+  color: var(--ink);
+  margin-bottom: 3rem;
+}
+
+.approach h2 {
+  color: var(--paper);
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  text-align: left;
+  margin-bottom: 3rem;
+}
+
+.featured-image {
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 1.25rem;
+}
+
+.featured-image img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.featured-card:hover .featured-image img {
+  transform: scale(1.05);
+}
+
+.featured-card h3 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+}
+
+.featured-card p {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #4A5060;
+}
+
+.practice-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--hairline);
+  border: 1px solid var(--hairline);
+  text-align: left;
+}
+
+.practice-list-item {
+  background: var(--paper);
+  padding: 1.75rem 1.5rem;
+}
+
+.practice-list-item h3 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.05rem;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+}
+
+.practice-list-item p {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: #4A5060;
+}
+
+/* ---------- APPROACH ---------- */
+.approach {
+  padding: 5rem 0;
+  background: var(--ink);
+  text-align: center;
+}
+
+.approach-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  text-align: left;
+}
+
+.approach-step {
+  border-top: 2px solid var(--brass);
+  padding-top: 1.25rem;
+}
+
+.approach-number {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  color: var(--brass-light);
+  margin-bottom: 0.5rem;
+}
+
+.approach-step h3 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: var(--paper);
+  margin-bottom: 0.5rem;
+}
+
+.approach-step p {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: rgba(250, 248, 244, 0.75);
+}
+
+/* ---------- INDUSTRIES ---------- */
+.industries {
+  padding: 4.5rem 0;
+  background: var(--paper-dim);
+  text-align: center;
+}
+
+.industry-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.industry-tags span {
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid var(--brass);
+  border-radius: 999px;
+  color: var(--ink);
+}
+
+/* ---------- CLOSING CTA ---------- */
+.closing-cta {
+  padding: 5rem 0;
+  background: var(--paper);
+  text-align: center;
+}
+
+.closing-cta h2 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 2rem;
+  color: var(--ink);
+  margin-bottom: 0.75rem;
+}
+
+.closing-cta p {
+  font-family: var(--font-body);
+  color: #4A5060;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.9rem 2rem;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--ink);
+  border: 1.5px solid var(--ink);
+}
+
+.btn-outline:hover {
+  background: var(--ink);
+  color: var(--paper);
+  transform: translateY(-2px);
+}
+
+/* ---------- FOOTER ---------- */
+.footer {
+  background: var(--ink);
+  padding: 2.5rem 0;
+  text-align: center;
+}
+
+.footer-copy {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: rgba(250, 248, 244, 0.65);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 900px) {
+  .featured-grid { grid-template-columns: 1fr; }
+  .practice-list { grid-template-columns: repeat(2, 1fr); }
+  .approach-steps { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .practice-list { grid-template-columns: 1fr; }
+  .approach-steps { grid-template-columns: 1fr; }
+}

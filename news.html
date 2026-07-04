@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News | Audissey L. And Associates</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/global.css" />
+  <link rel="stylesheet" href="assets/css/news.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo.png" alt="Audissey L. And Associates Logo">
+        <span>Audissey L. And Associates</span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="expertise.html">Our Expertise</a></li>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+          <li><a href="news.html" class="active">News</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="news-hero">
+    <div class="container">
+      <p class="eyebrow">Insights</p>
+      <h1>Latest Legal Updates &amp; News</h1>
+      <p class="news-text">Stay informed with our latest articles, legal insights, and updates.</p>
+    </div>
+  </section>
+
+  <!-- FEATURED ARTICLE -->
+  <section class="featured-article">
+    <div class="container featured-grid">
+      <div class="featured-image">
+        <img src="assets/images/trend.jpg" alt="Corporate law trends 2026">
+      </div>
+      <div class="featured-content">
+        <span class="tag">Corporate Law</span>
+        <h2>Corporate Law Trends 2026</h2>
+        <p class="article-meta">12 June 2026 · 6 min read</p>
+        <p>Discover the latest corporate law changes and how they affect businesses today, from governance requirements to cross-border compliance shifts.</p>
+        <a href="news-corporate-law-trends.html" class="btn btn-outline">Read Article</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORY FILTER -->
+  <section class="category-bar">
+    <div class="container">
+      <div class="categories">
+        <span class="category active">All</span>
+        <span class="category">Corporate</span>
+        <span class="category">Litigation</span>
+        <span class="category">Family Law</span>
+        <span class="category">Intellectual Property</span>
+        <span class="category">Regulatory</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWS GRID -->
+  <section class="news-section" id="news">
+    <div class="container">
+      <div class="news-grid">
+
+        <article class="news-card">
+          <div class="news-card-image">
+            <img src="assets/images/case.jpg" alt="Litigation case studies">
+          </div>
+          <span class="tag">Litigation</span>
+          <h3>Litigation Case Studies</h3>
+          <p class="article-meta">3 June 2026 · 4 min read</p>
+          <p>Review our recent successful litigation cases and key takeaways.</p>
+          <a href="news-litigation-case-studies.html" class="read-more">Read More →</a>
+        </article>
+
+        <article class="news-card">
+          <div class="news-card-image">
+            <img src="assets/images/update.jpg" alt="Family law updates">
+          </div>
+          <span class="tag">Family Law</span>
+          <h3>Family Law Updates</h3>
+          <p class="article-meta">28 May 2026 · 3 min read</p>
+          <p>Understand new policies impacting family law and client rights.</p>
+          <a href="news-family-law-updates.html" class="read-more">Read More →</a>
+        </article>
+
+        <article class="news-card">
+          <div class="news-card-image">
+            <img src="assets/images/insight.jpg" alt="Intellectual property insights">
+          </div>
+          <span class="tag">Intellectual Property</span>
+          <h3>Intellectual Property Insights</h3>
+          <p class="article-meta">19 May 2026 · 5 min read</p>
+          <p>Learn about recent IP rulings and their impact on businesses and creators.</p>
+          <a href="news-intellectual-property-insights.html" class="read-more">Read More →</a>
+        </article>
+
+        <article class="news-card">
+          <div class="news-card-image">
+            <img src="assets/images/alert.jpg" alt="Regulatory alerts">
+          </div>
+          <span class="tag">Regulatory</span>
+          <h3>Regulatory Alerts</h3>
+          <p class="article-meta">10 May 2026 · 3 min read</p>
+          <p>Stay ahead with timely notifications on legal regulations and compliance.</p>
+          <a href="news-regulatory-alerts.html" class="read-more">Read More →</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+    <div class="container newsletter-inner">
+      <div>
+        <h2>Never miss an update</h2>
+        <p>Get legal insights and firm news delivered to your inbox once a month.</p>
+      </div>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Your email address" required>
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">&copy; 2015 Audissey L. And Associates. All Rights Reserved.</p>
+    </div>
+    <div class="mobile-footer">
+      <p>Need help fast? Tap to contact our team.</p>
+      <a href="contact.html" class="btn btn-primary">Contact Us</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
